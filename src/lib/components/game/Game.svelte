@@ -39,7 +39,7 @@
   <div class="scene">
     <!-- <div class="img"></div> -->
     {#if currentScene.img}
-      <img src={`/images/${currentScene.img}.jpg`} alt="fruit" class="img" />
+      <img src={`/images/${currentScene.img}.jpg`} alt="scene" class="img" />
     {/if}
     {#if currentScene.flairs}
       <p class="flair">

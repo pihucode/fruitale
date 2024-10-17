@@ -1,9 +1,6 @@
 <script>
   import { selectedProfile } from "$lib/stores/store.js";
 
-  export const prerender = true;
-  export const trailingSlash = "always";
-
   const pageStyles = {
     avocado: {
       pageBgColor: "rgb(184 223 142)",
@@ -64,7 +61,7 @@
   >
     <slot></slot>
   </div>
-  <div class="footer">fruiter 2024 {$selectedProfile}</div>
+  <div class="footer">fruiter 2024</div>
 </div>
 
 <style>
@@ -92,5 +89,10 @@
     margin: 24px;
     background-color: bisque;
     box-sizing: border-box;
+  }
+
+  .footer {
+    font-size: 10px;
+    margin-bottom: 24px;
   }
 </style>
