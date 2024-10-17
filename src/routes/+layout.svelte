@@ -1,6 +1,9 @@
 <script>
   import { selectedProfile } from "$lib/stores/store.js";
 
+  export const prerender = true;
+  export const trailingSlash = "always";
+
   const pageStyles = {
     avocado: {
       pageBgColor: "rgb(184 223 142)",
