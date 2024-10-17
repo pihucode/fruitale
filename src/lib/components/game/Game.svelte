@@ -1,5 +1,4 @@
 <script>
-  import { base } from "$app/paths";
   import { scenes } from "$lib/data/scenes.js";
 
   let currentSceneId = "start";
@@ -33,18 +32,12 @@
 </script>
 
 <div>
-  <!-- <p>currentChoiceId: {currentChoiceId}</p>
-  <p>currentSceneId: {currentSceneId}</p>
-  <p>fruitiness: {fruitiness}</p> -->
+  <p>fruitiness: {fruitiness}</p>
   <h1>Fruitale</h1>
   <div class="scene">
     <!-- <div class="img"></div> -->
     {#if currentScene.img}
-      <img
-        src={`${base}/images/${currentScene.img}.jpg`}
-        alt="scene"
-        class="img"
-      />
+      <img src={`/images/${currentScene.img}.jpg`} alt="scene" class="img" />
     {/if}
     {#if currentScene.flairs}
       <p class="flair">

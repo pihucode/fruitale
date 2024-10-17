@@ -1,5 +1,4 @@
 <script>
-  import { base } from "$app/paths";
   import { profiles } from "$lib/data/profiles.js";
 
   export let fruit;
@@ -23,32 +22,35 @@
   <h1>{profile.name}</h1>
   <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 12px;">
     <!-- <div class="img"></div> -->
-    <img src={`${base}/images/${fruit}.jpg`} alt="fruit" class="img" />
+    <img src={`/images/${fruit}.jpg`} alt="fruit" class="img" />
     <div class="fruitiness">
       <h2>Fruitiness</h2>
       <ul>
         <li>
           <div>Fruity Flavor</div>
-          <div>
+          <div style="font-size: 20px">
             {#each Array(profile.fruitiness[0]) as _, i}{symbol}{/each}
           </div>
         </li>
         <li>
           <div>Core Strength</div>
-          <div>
+          <div style="font-size: 20px">
             {#each Array(profile.fruitiness[1]) as _, i}{symbol}{/each}
           </div>
         </li>
         <li>
           <div>Zesty Nature</div>
-          <div>
+          <div style="font-size: 20px">
             {#each Array(profile.fruitiness[2]) as _, i}{symbol}{/each}
           </div>
         </li>
       </ul>
     </div>
   </div>
-  <p>{profile.description}</p>
+  <div class="about">
+    <h2>About</h2>
+    <p>{profile.description}</p>
+  </div>
   <div class="traits">
     <h2>Traits</h2>
     <ul>

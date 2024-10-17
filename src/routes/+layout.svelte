@@ -93,6 +93,7 @@
 
   .footer {
     font-size: 10px;
+    opacity: 0.5;
     margin-bottom: 24px;
   }
 </style>

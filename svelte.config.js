@@ -1,4 +1,4 @@
-import adapter from "@sveltejs/adapter-static";
+import adapter from "@sveltejs/adapter-auto";
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -8,24 +8,6 @@ const config = {
     // If your environment is not supported, or you settled on a specific environment, switch out the adapter.
     // See https://kit.svelte.dev/docs/adapters for more information about adapters.
     adapter: adapter(),
-    paths: {
-      base: process.env.NODE_ENV === "production" ? "/fruitale" : "",
-    },
-    prerender: {
-      crawl: true,
-      entries: [
-        // list all dynamic routes here so it can be built with static adapter
-        // avocado, blueberry, peach, grapes, banana, mango, orange, lemon
-        "/profile/avocado",
-        "/profile/blueberry",
-        "/profile/peach",
-        "/profile/grapes",
-        "/profile/banana",
-        "/profile/mango",
-        "/profile/orange",
-        "/profile/lemon",
-      ],
-    },
   },
 };
 

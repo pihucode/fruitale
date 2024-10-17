@@ -3,9 +3,9 @@ export const profiles = {
   avocado: {
     name: "Avocado",
     description:
-      "Smooth, versatile, and calm under pressure. Avocados are nurturing and balanced, providing stability and comfort to others while being adaptable in different situations.",
+      "Avocados are nurturing and balanced, providing stability and comfort to others while being adaptable in different situations.",
     traits: [
-      "Avocados are compassionate and supportive, always considering others’ feelings.",
+      "Avocados are compassionate and supportive, always considering the feelings of others.",
       "They remain calm under pressure and approach situations with a balanced perspective.",
     ],
     fact: "Avocado is a fruit that is grown in warm climates.",
@@ -20,7 +20,7 @@ export const profiles = {
       "They enjoy solving problems and understanding complex ideas, preferring to analyze things before acting.",
       "Blueberries are more introverted and enjoy spending time in smaller groups or alone.",
     ],
-    fact: " ",
+    fact: "Blueberry shrubs are very hardy and can survive temperatures as low as -35F.",
     fruitiness: [3, 3, 2],
   },
   peach: {
@@ -31,7 +31,7 @@ export const profiles = {
       "Peaches are kind, caring, and often seek to make others feel comfortable.",
       "They value harmony and try to resolve conflicts peacefully, preferring compromise.",
     ],
-    fact: "",
+    fact: 'The scientific name for the peach, Prunus persica, literally means “Persian plum," and the Romans called the peach a “Persian apple." The French translated that name to "pêche," which ultimately led to the English name for the peach today.',
     fruitiness: [4, 3, 1],
   },
   grapes: {
@@ -41,9 +41,8 @@ export const profiles = {
     traits: [
       "Grapes thrive in group settings and enjoy working with others to achieve shared goals.",
       "They can adapt to new situations with ease and are open to change.",
-      "",
     ],
-    fact: "",
+    fact: "Grapes can be red, green, white, black, purple, blue, and golden.",
     fruitiness: [3, 2, 3],
   },
   banana: {
@@ -55,7 +54,7 @@ export const profiles = {
       "Bananas enjoy living in the moment and are open to new experiences.",
       "They have a positive outlook and are always looking on the bright side.",
     ],
-    fact: "",
+    fact: "Bananas float in water because they are less dense.",
     fruitiness: [4, 1, 3],
   },
   mango: {
@@ -67,7 +66,7 @@ export const profiles = {
       "Mangos value their freedom and enjoy paving their own path in life.",
       "Mangos are unafraid to take risks and dive headfirst into new challenges.",
     ],
-    fact: "",
+    fact: "Mangoes are a sweet treat that are fat free, sodium free, and cholesterol free.",
     fruitiness: [5, 2, 1],
   },
   orange: {
@@ -77,9 +76,8 @@ export const profiles = {
     traits: [
       "They enjoy interacting with others and tend to be the life of the party.",
       "Oranges bring energy to any situation and often inspire others.",
-      "",
     ],
-    fact: "",
+    fact: "There are over 600 types of oranges grown around the world.",
     fruitiness: [5, 1, 2],
   },
   lemon: {
@@ -90,7 +88,7 @@ export const profiles = {
       "Lemons are detail-oriented and strive for excellence in everything they do.",
       "They don't shy away from expressing their opinions or standing up for what they believe in.",
     ],
-    fact: "",
+    fact: "You can create a lemon battery by connecting a nail to one side of a lemon and a penny to the other side.",
     fruitiness: [1, 2, 5],
   },
 };
