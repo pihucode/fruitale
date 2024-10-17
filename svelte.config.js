@@ -11,6 +11,21 @@ const config = {
     paths: {
       base: process.env.NODE_ENV === "production" ? "/fruitale" : "",
     },
+    prerender: {
+      crawl: true,
+      entries: [
+        // list all dynamic routes here so it can be built with static adapter
+        // avocado, blueberry, peach, grapes, banana, mango, orange, lemon
+        "/profile/avocado",
+        "/profile/blueberry",
+        "/profile/peach",
+        "/profile/grapes",
+        "/profile/banana",
+        "/profile/mango",
+        "/profile/orange",
+        "/profile/lemon",
+      ],
+    },
   },
 };
 
