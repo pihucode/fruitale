@@ -22,7 +22,7 @@
   <h1>{profile.name}</h1>
   <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 12px;">
     <!-- <div class="img"></div> -->
-    <img src={`/images/${fruit}.jpg`} alt="fruit" class="img" />
+    <img src={`/images/${fruit}.jpg`} alt="fruit" class="fruit-avatar" />
     <div class="fruitiness">
       <h2>Fruitiness</h2>
       <ul>
@@ -78,7 +78,7 @@
   .profile {
     text-align: center;
   }
-  .img {
+  .fruit-avatar {
     width: 240px;
     height: 240px;
     border-radius: 8px;

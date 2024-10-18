@@ -5,6 +5,17 @@
   let currentChoiceId = 1;
   let fruitiness = [0, 0, 0, 0, 0, 0, 0, 0];
 
+  const fruits = [
+    "avocado",
+    "blueberry",
+    "peach",
+    "grapes",
+    "banana",
+    "mango",
+    "orange",
+    "lemon",
+  ];
+
   const choiceAction = (choice) => {
     fruitiness = fruitiness.map(
       (value, index) => value + choice.actions[index]
@@ -13,8 +24,12 @@
     currentSceneId = choice.goto;
   };
 
-  const getFruityResult = () => {
+  const getResultIndex = () => {
     const maxFruitiness = Math.max(...fruitiness);
+    return fruitiness.indexOf(maxFruitiness);
+  };
+
+  const getFruityResult = () => {
     const result = [
       "You are an avocado!",
       "You are a blueberry!",
@@ -25,7 +40,7 @@
       "You are an orange!",
       "You are a lemon!",
     ];
-    return result[fruitiness.indexOf(maxFruitiness)];
+    return result[getResultIndex()];
   };
 
   $: currentScene = scenes[currentSceneId];
@@ -62,6 +77,14 @@
       <p style="margin-top: 0;">
         {getFruityResult()}
       </p>
+      <img
+        src={`/images/${fruits[getResultIndex()]}.jpg`}
+        alt="fruit"
+        class="fruit-avatar"
+      />
+      <a href="/profile/{fruits[getResultIndex()]}"
+        >Check out your fruit profile!</a
+      >
     {/if}
   </div>
 </div>
@@ -78,6 +101,12 @@
   }
   .img {
     width: 400px;
+    height: 240px;
+    border-radius: 8px;
+    background-color: rgb(255, 200, 150);
+  }
+  .fruit-avatar {
+    width: 240px;
     height: 240px;
     border-radius: 8px;
     background-color: rgb(255, 200, 150);
