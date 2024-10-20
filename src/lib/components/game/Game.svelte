@@ -47,12 +47,16 @@
 </script>
 
 <div>
-  <p>fruitiness: {fruitiness}</p>
+  <!-- <p>fruitiness: {fruitiness}</p> -->
   <h1>Fruitale</h1>
   <div class="scene">
-    <!-- <div class="img"></div> -->
     {#if currentScene.img}
-      <img src={`/images/${currentScene.img}.jpg`} alt="scene" class="img" />
+      <img
+        src={`/images/${currentScene.img}.jpg`}
+        alt="scene"
+        class="img"
+        style={currentSceneId === "start" ? "height: 400px" : ""}
+      />
     {/if}
     {#if currentScene.flairs}
       <p class="flair">

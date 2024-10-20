@@ -1,5 +1,6 @@
 export const scenes = {
   start: {
+    img: "fruit-circle",
     text: "Find out what kind of fruit you are!",
     choices: [
       {
@@ -157,7 +158,6 @@ export const scenes = {
     ],
   },
   interlude: {
-    img: "interlude",
     flairs: {
       1: 'You rush back to the palace with your victory in hand. "The king will be berry proud!" you say, picturing the royal celebration in your honor. Perhaps you\'ll even get a golden fruit basket as a reward!',
       2: "With the evil Dragonfruit gone, the mountain is finally ripe for exploration! Who knows what kinds of rare and exotic fruit relics you might find hidden among the fruity peaks?",
