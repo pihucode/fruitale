@@ -140,4 +140,12 @@
     background-color: rgb(255, 200, 150);
     transform: scale(1.1);
   }
+
+  @media (max-width: 768px) {
+    img {
+      max-width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
 </style>

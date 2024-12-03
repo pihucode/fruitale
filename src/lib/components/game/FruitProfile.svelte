@@ -20,7 +20,7 @@
 
 <div class="profile">
   <h1>{profile.name}</h1>
-  <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 12px;">
+  <div class="contents">
     <!-- <div class="img"></div> -->
     <img src={`/images/${fruit}.jpg`} alt="fruit" class="fruit-avatar" />
     <div class="fruitiness">
@@ -75,6 +75,12 @@
   h2 {
     font-size: 18px;
   }
+  .contents {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
   .profile {
     text-align: center;
   }
@@ -83,5 +89,12 @@
     height: 240px;
     border-radius: 8px;
     background-color: rgb(255, 200, 150);
+  }
+
+  @media (max-width: 768px) {
+    .contents {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 </style>
